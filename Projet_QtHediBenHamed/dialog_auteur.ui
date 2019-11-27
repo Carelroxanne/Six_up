@@ -1,0 +1,1032 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog_auteur</class>
+ <widget class="QDialog" name="Dialog_auteur">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>542</width>
+    <height>358</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>510</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(44, 62, 89);
+border-right-color: rgb(44, 62, 89);
+border-color: rgb(44, 62, 89);
+selection-background-color: rgb(255, 255, 255);
+border-bottom-color: rgb(255, 255, 255);
+border-bottom-color: rgb(44, 62, 89);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Triangular</enum>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab_Ajouter">
+    <attribute name="title">
+     <string>Ajouter</string>
+    </attribute>
+    <widget class="QLineEdit" name="lineEdit_nom">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>100</y>
+       <width>133</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_prenom">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>132</y>
+       <width>133</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="nationalite">
+     <property name="geometry">
+      <rect>
+       <x>32</x>
+       <y>164</y>
+       <width>60</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+</string>
+     </property>
+     <property name="text">
+      <string>Nationalité</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_id_auteur">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>68</y>
+       <width>133</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Prenom">
+     <property name="geometry">
+      <rect>
+       <x>32</x>
+       <y>132</y>
+       <width>90</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Prenom Auteur </string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_nationalite">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>164</y>
+       <width>133</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ide_auteur">
+     <property name="geometry">
+      <rect>
+       <x>32</x>
+       <y>68</y>
+       <width>102</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Identifiant auteur </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="nom_auteur">
+     <property name="geometry">
+      <rect>
+       <x>32</x>
+       <y>100</y>
+       <width>72</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Nom Auteur </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_ajouter">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>260</y>
+       <width>80</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Valider</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Date_nais">
+     <property name="geometry">
+      <rect>
+       <x>32</x>
+       <y>192</y>
+       <width>88</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Date de naissance</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_Jour">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>192</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_Mois">
+     <property name="geometry">
+      <rect>
+       <x>187</x>
+       <y>192</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_Annee">
+     <property name="geometry">
+      <rect>
+       <x>235</x>
+       <y>192</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Jour">
+     <property name="geometry">
+      <rect>
+       <x>145</x>
+       <y>214</y>
+       <width>30</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> Jour</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Mois">
+     <property name="geometry">
+      <rect>
+       <x>198</x>
+       <y>214</y>
+       <width>20</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Mois</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Annee">
+     <property name="geometry">
+      <rect>
+       <x>242</x>
+       <y>214</y>
+       <width>30</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Année</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_Nb_livres">
+     <property name="geometry">
+      <rect>
+       <x>141</x>
+       <y>235</y>
+       <width>133</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Nombre_des_livres_2">
+     <property name="geometry">
+      <rect>
+       <x>32</x>
+       <y>235</y>
+       <width>103</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Nombre des livres</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_Supprimer">
+    <attribute name="title">
+     <string>Supprimer</string>
+    </attribute>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>58</y>
+       <width>410</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Vous devez Tapez l'identifiant d'auteur que vous souhaite le supprimer</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_ide_4">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>60</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_supprimer">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>260</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>valider</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_Modifer">
+    <attribute name="title">
+     <string>Modifier</string>
+    </attribute>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>60</y>
+       <width>400</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Vous devez Tapez l'identifiant d'auteur que vous souhaite modifier</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_ide_modif">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>60</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_modifier">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>260</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Valider</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_nationalite_modif">
+     <property name="geometry">
+      <rect>
+       <x>145</x>
+       <y>170</y>
+       <width>133</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_Mois_modif">
+     <property name="geometry">
+      <rect>
+       <x>192</x>
+       <y>198</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_Annee_modif">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>198</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_dat_naismodif">
+     <property name="geometry">
+      <rect>
+       <x>37</x>
+       <y>198</y>
+       <width>88</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Date de naissance</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_nom_modif">
+     <property name="geometry">
+      <rect>
+       <x>145</x>
+       <y>106</y>
+       <width>133</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Jour_MODIF">
+     <property name="geometry">
+      <rect>
+       <x>203</x>
+       <y>220</y>
+       <width>20</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Mois</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Nombre_des_livres">
+     <property name="geometry">
+      <rect>
+       <x>37</x>
+       <y>241</y>
+       <width>103</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Nombre des livres</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_Nblivres_modif">
+     <property name="geometry">
+      <rect>
+       <x>146</x>
+       <y>241</y>
+       <width>133</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Prenom_auteur">
+     <property name="geometry">
+      <rect>
+       <x>37</x>
+       <y>138</y>
+       <width>90</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Prenom Auteur </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="nationalite_modif">
+     <property name="geometry">
+      <rect>
+       <x>37</x>
+       <y>170</y>
+       <width>60</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+</string>
+     </property>
+     <property name="text">
+      <string>Nationalité</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_Jour_modif">
+     <property name="geometry">
+      <rect>
+       <x>145</x>
+       <y>198</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="nom_auteur_modif">
+     <property name="geometry">
+      <rect>
+       <x>37</x>
+       <y>106</y>
+       <width>72</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Nom Auteur </string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_prenom_modif">
+     <property name="geometry">
+      <rect>
+       <x>145</x>
+       <y>138</y>
+       <width>133</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_anne">
+     <property name="geometry">
+      <rect>
+       <x>247</x>
+       <y>220</y>
+       <width>30</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Année</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_Jour">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>220</y>
+       <width>30</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> Jour</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_Consulter">
+    <attribute name="title">
+     <string>Consulter</string>
+    </attribute>
+    <widget class="QTableView" name="tableauteur">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>440</width>
+       <height>210</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Trier">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>280</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Trier</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_chercher_1">
+    <attribute name="title">
+     <string>Chercher Par saisi </string>
+    </attribute>
+    <widget class="QLineEdit" name="lineEdit_identifiant">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>250</y>
+       <width>90</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_saisi">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>250</y>
+       <width>250</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Vous devez Tapez l'identifiant d'auteur </string>
+     </property>
+    </widget>
+    <widget class="QTableView" name="tableauteur_chercher">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>460</width>
+       <height>210</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_chercher">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>290</y>
+       <width>80</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Valider</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_chercher_2">
+    <attribute name="title">
+     <string>chercher par liste</string>
+    </attribute>
+    <widget class="QLineEdit" name="lineEdit_nom_2">
+     <property name="geometry">
+      <rect>
+       <x>128</x>
+       <y>116</y>
+       <width>231</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="nationalite_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>168</y>
+       <width>102</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+</string>
+     </property>
+     <property name="text">
+      <string>Nationalité</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_auteur">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>110</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">selection-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+selection-background-color:  rgb(44, 62, 89);
+</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_prenom_2">
+     <property name="geometry">
+      <rect>
+       <x>128</x>
+       <y>142</y>
+       <width>231</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+
+</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_nationalite_2">
+     <property name="geometry">
+      <rect>
+       <x>128</x>
+       <y>168</y>
+       <width>231</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="nom_auteur_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>116</y>
+       <width>102</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Nom Auteur </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Prenom_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>142</y>
+       <width>102</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Prenom Auteur </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ide_auteur_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>102</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Identifiant auteur </string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_id_auteur_2">
+     <property name="geometry">
+      <rect>
+       <x>128</x>
+       <y>90</y>
+       <width>231</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_Mois_2">
+     <property name="geometry">
+      <rect>
+       <x>208</x>
+       <y>194</y>
+       <width>73</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_Annee_2">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>237</y>
+       <width>230</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Date_nais_2">
+     <property name="geometry">
+      <rect>
+       <x>21</x>
+       <y>194</y>
+       <width>88</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Date de naissance</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Mois_2">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>217</y>
+       <width>40</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Mois</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Nombre_des_livres_3">
+     <property name="geometry">
+      <rect>
+       <x>21</x>
+       <y>239</y>
+       <width>103</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Nombre des livres</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_Nb_livres_2">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>194</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_Jour_2">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>194</y>
+       <width>72</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Jour_2">
+     <property name="geometry">
+      <rect>
+       <x>154</x>
+       <y>216</y>
+       <width>24</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> Jour</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Annee_2">
+     <property name="geometry">
+      <rect>
+       <x>307</x>
+       <y>216</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Année</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
