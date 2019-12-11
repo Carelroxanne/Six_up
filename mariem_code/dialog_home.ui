@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog_home</class>
+ <widget class="QDialog" name="Dialog_home">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>323</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(44, 62, 89);</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_Client">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>70</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(248, 148, 6);
+color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>Clients</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Rdv">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>160</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(248, 148, 6);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Rendez-vous</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Livre">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>115</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(248, 148, 6);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Livre</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Emprunt">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>250</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(248, 148, 6);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Emprunts</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Auteur">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>30</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(248, 148, 6);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Auteur</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Departement">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>30</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(248, 148, 6);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Departements</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Commande">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>205</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(248, 148, 6);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Commandes</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Personnel">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>70</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(248, 148, 6);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Personnel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Exemplaire">
+   <property name="geometry">
+    <rect>
+     <x>201</x>
+     <y>115</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(248, 148, 6);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Exemplaire</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_categorie_client">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>160</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(248, 148, 6);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Categorie Client</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_categorie_Departement">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>205</y>
+     <width>130</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(248, 148, 6);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Categorie Departement</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_categorie_Departement_2">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>250</y>
+     <width>130</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(248, 148, 6);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Type Rendez vous</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
